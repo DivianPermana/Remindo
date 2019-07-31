@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "442130496849",
+    "firebase_url": "https://remindo-4e080.firebaseio.com",
+    "project_id": "remindo-4e080",
+    "storage_bucket": "remindo-4e080.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442130496849:android:291a22d2fac88a25",
+        "android_client_info": {
+          "package_name": "id.ac.unikom.remindo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "442130496849-bjl6lsoi69e6f6kaos8ci08skhha70qf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.ac.unikom.remindo",
+            "certificate_hash": "e52f61ee51b7b404ce2e12780b6788cc5f24ddf3"
+          }
+        },
+        {
+          "client_id": "442130496849-5pu1vq5cg7ov5ngajt8ubjb97miqvojv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfquCAvL3PucoPoaMNBuOfWxG2rVctuII"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "442130496849-5pu1vq5cg7ov5ngajt8ubjb97miqvojv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
