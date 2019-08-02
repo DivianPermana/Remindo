@@ -63,13 +63,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (!isUpdate) {
-                    if (title.getText().toString() == "") {
+                    if (title.getText().toString().equals("") && desc.getText().toString().equals("")) {
                         Toast.makeText(MainActivity.this, "This field cannot be empty", Toast.LENGTH_SHORT).show();
                     } else {
                         setData(title.getText().toString(), desc.getText().toString());
                     }
                 } else {
-                    if (title.getText().toString() == "") {
+                    if (title.getText().toString().equals("") && desc.getText().toString().equals("")) {
                         Toast.makeText(MainActivity.this, "This field cannot be empty", Toast.LENGTH_SHORT).show();
                     } else {
                         updateData(title.getText().toString(), desc.getText().toString());
