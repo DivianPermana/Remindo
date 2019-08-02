@@ -22,13 +22,12 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-
             <com.rengwuxian.materialedittext.MaterialEditText
                 android:id="@+id/title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
-                android:text="Title"
+                android:hint="@string/title"
                 android:textColorHint="@android:color/white"
                 android:textSize="30sp"
                 app:met_baseColor="@android:color/white"
@@ -41,7 +40,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textMultiLine"
-                android:text="Description"
+                android:hint="@string/description"
                 android:textColorHint="@android:color/white"
                 android:textSize="20sp"
                 app:met_baseColor="@android:color/white"
@@ -64,13 +63,16 @@
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/listTodo"
+        android:scrollbars="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/app_bar_layout"
+        android:layout_below="@id/app_bar_layout"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="20dp"
-        android:paddingLeft="20dp"
-        android:paddingStart="20dp"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
     </android.support.v7.widget.RecyclerView>

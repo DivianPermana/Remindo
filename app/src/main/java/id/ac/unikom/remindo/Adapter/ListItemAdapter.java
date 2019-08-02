@@ -39,7 +39,7 @@ class ListItemViewHolder extends RecyclerView.ViewHolder implements View.OnClick
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         menu.setHeaderTitle("Select the Action");
-        menu.add(0, 0, getAdapterPosition(), "DELETE");
+        menu.add(0, 0, getAdapterPosition(), "Delete");
     }
 }
 

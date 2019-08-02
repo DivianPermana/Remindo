@@ -1,7 +1,10 @@
 package id.ac.unikom.remindo;
 
 import android.app.AlertDialog;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -63,10 +66,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (!isUpdate) {
-                    setData(title.getText().toString(), desc.getText().toString());
+                    if (title.getText().toString() == "") {
+                        setData(title.getText().toString(), desc.getText().toString());
+                    }else{
+                        Toast.makeText(MainActivity.this, "This field cannot be empty", Toast.LENGTH_SHORT).show();
+                    }
                 } else {
+                    if (title.getText().toString() == "") {
                     updateData(title.getText().toString(), desc.getText().toString());
                     isUpdate = !isUpdate;
+                    }else{
+                        Toast.makeText(MainActivity.this, "This field cannot be empty", Toast.LENGTH_SHORT).show();
+                    }
                 }
             }
         });
@@ -82,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onContextItemSelected(MenuItem item) {
-        if (item.getTitle().equals("DELETE"))
+        if (item.getTitle().equals("Delete"))
             deleteItem(item.getOrder());
         return super.onContextItemSelected(item);
     }
